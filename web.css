@@ -1,0 +1,162 @@
+    /* kv */
+.kv{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.kv .main-copy{
+color: #a162db;
+font-size: 30px;
+font-weight: bold;
+text-align: center;
+line-height: 1;
+letter-spacing: .2em;
+font-family: "Yellowtail", cursive;
+font-weight: 400;
+font-style: normal;
+/*アニメーション*/
+animation: fadeInDown;
+animation-duration: 1.5s;
+}
+
+.kv .sub-copy{
+color: #a162db;
+font-size: 20px;
+text-align: center;
+font-family: "Delicious Handrawn", cursive;
+font-weight: 400;
+font-style: normal;
+/*アニメーション*/
+animation: fadeInUp;
+animation-duration: 1.5s;
+}
+
+/* video */
+.video{
+width: 100%;
+height: 100vh;
+background: url(C:\Users\student\Downloads\kep1er.jpg) no-repeat center/cover;
+position: absolute;
+top: 0;
+left: 0;
+overflow: hidden;
+z-index: -1;
+}
+
+.video::after{
+content: '';
+width: 100%;
+height: 100%;
+background-color: #000000d5;
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+opacity: .3;
+}
+
+.video video{
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+/* kv */
+.kv{
+min-width: 960px;
+}
+
+.kv .main-copy{
+font-size: 60px;
+}
+
+.kv .sub-copy{
+font-size: 30px;
+}
+
+/* video */
+.video{
+min-width: 960px;
+}
+}
+/*upper*/
+.upper{
+width: 980px;
+}
+.logo{
+color: #ffffff;
+font-size: 65px;
+position: absolute;
+top: 0;
+left: 10px;
+font-family: "Mynerve", cursive;
+font-weight: 400;
+font-style: normal;
+}
+.text_2{
+color: #ffffff;
+font-size: 30px;
+position: absolute;
+top:15px;
+right:50px;
+font-family: "Yellowtail", cursive;
+font-weight: 400;
+font-style: normal;
+transition: letter-spacing 0.3s;
+}
+.text_2:hover {
+letter-spacing: 0.05em;
+}
+.text_3{
+color: #ffffff ;
+font-size: 30px;
+position: absolute;
+top:15px;
+right:450px;
+font-family: "Yellowtail", cursive;
+font-weight: 400;
+font-style: normal;
+transition: letter-spacing 0.3s;
+}
+.text_3:hover {
+letter-spacing: 0.05em;
+}
+.text_4{
+color: #ffffff;
+font-size: 30px;
+position: absolute;
+top:15px;
+right:600px;
+font-family: "Yellowtail", cursive;
+font-weight: 400;
+font-style: normal;
+transition: letter-spacing 0.3s;
+}
+.text_4:hover {
+letter-spacing: 0.05em;
+}
+.text_5{
+color: #ffffff;
+font-size: 30px;
+position: absolute;
+top:15px;
+right:280px;
+font-family: "Yellowtail", cursive;
+font-weight: 400;
+font-style: normal;
+transition: letter-spacing 0.3s;
+}
+.text_5:hover {
+letter-spacing: 0.05em;
+}
+a{             /*aタグの色変更無効化*/
+color:#ffffff;
+}
